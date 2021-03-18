@@ -1,11 +1,11 @@
 {% extends 'base.html' %} 
-
+{% load static %}
 {% block content %}
 
 
     <main class="about-us">
     <div class="banner">
-      <img src="./assets/images/bg-banner.png" alt="" class="img-fluid w-100">
+      <img src="{% static './assets/images/bg-banner.png'%}" alt="" class="img-fluid w-100">
       <h1 class="text-center">
         About Us
       </h1>
