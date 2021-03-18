@@ -4,9 +4,10 @@
   role="alert"
 >
   <strong>
-    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error: {% else%} {{message.tags | title}} {% endif %}
-    {{ message }}
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error: {% else%}
+    {{message.tags | title}} {% endif %}
   </strong>
+  {{ message }}
   <button
     type="button"
     class="btn-close"
