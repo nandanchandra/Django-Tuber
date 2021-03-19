@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import Hiretuber
+from django.contrib import messages
+from django.shortcuts import redirect
 
 # Create your views here.
 
@@ -16,9 +19,9 @@ def hiretuber(request):
         user_id=request.POST['user_id']
 
 
-        hiretuber= Hiretuber(first_name=first_name,last_name=last_name,tuber_id=tuber_id,tuber_name=tuber_name,city=city,phone=phone,email=email,state=state,message=message,user_id=user_id)
+        hiretuber=Hiretuber(first_name=first_name,last_name=last_name,tuber_id=tuber_id,tuber_name=tuber_name,city=city,phone=phone,email=email,state=state,message=message,user_id=user_id)
 
         hiretuber.save()
-        message.success(request,'Thanks for reaching out!')
+        messages.success(request,'Thanks for reaching out!')
         return redirect('youtubers')
        
