@@ -1,0 +1,6 @@
+django
+django-ckeditor
+djangocms-admin-style
+django-allauth
+psycopg2
+pillow
