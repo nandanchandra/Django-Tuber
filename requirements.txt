@@ -2,5 +2,9 @@ django
 django-ckeditor
 djangocms-admin-style
 django-allauth
+django-cors-headers
+django-heroku
+gunicorn
 psycopg2
 pillow
+whitenoise
